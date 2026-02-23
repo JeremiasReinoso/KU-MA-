@@ -182,7 +182,7 @@ img {
 
 .category-card {
   position: relative;
-  min-height: 280px;
+  height: 280px;
   border-radius: 30px;
   overflow: hidden;
   border: 1px solid rgba(26, 47, 38, 0.18);
@@ -193,6 +193,8 @@ img {
 }
 
 .category-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -540,7 +542,7 @@ img {
   }
 
   .category-card {
-    min-height: 230px;
+    height: 230px;
     border-radius: 24px;
   }
 

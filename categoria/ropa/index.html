@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KUMA Ropa Outdoor - Catalogo filtrado por categoria." />
+    <title>KUMA | Ropa Outdoor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body data-category="ropa">
+    <header class="site-topbar">
+      <div class="topbar-inner">
+        <a href="../../index.html" class="topbar-brand">
+          <img src="../../KUMA LOGO PARA CIRCULO.jfif" alt="KUMA" class="topbar-logo" />
+          <span class="topbar-title">KUMA</span>
+        </a>
+        <button id="cart-toggle" class="cart-toggle" type="button" aria-label="Abrir carrito">
+          <svg class="cart-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 4h-2l-1 2v2h2l2.6 8.6c.1.4.5.7 1 .7h8.9v-2h-8.1l-.3-1h8.6c.5 0 .9-.3 1-.8l1.4-6.5h-12.4l-.7-2zM10 20a1.6 1.6 0 100 3.2A1.6 1.6 0 0010 20zm7 0a1.6 1.6 0 100 3.2 1.6 1.6 0 000-3.2z" />
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="category-intro section-reveal">
+        <p class="breadcrumb">Inicio / Categoria</p>
+        <h1>Ropa Outdoor</h1>
+        <p>Prendas tecnicas y urbanas para clima variable y uso diario.</p>
+      </section>
+
+      <section class="catalog-grid" id="catalog-grid" aria-live="polite"></section>
+    </main>
+
+    <div id="cart-overlay" class="cart-overlay" aria-hidden="true"></div>
+    <aside id="cart-drawer" class="cart-drawer" aria-label="Carrito de compras">
+      <div class="cart-head">
+        <h2>Tu carrito</h2>
+        <button id="cart-close" class="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-foot">
+        <p class="cart-total">Total <strong id="cart-total">$0</strong></p>
+        <a id="cart-whatsapp" class="cart-whatsapp is-disabled" href="#" target="_blank" rel="noopener noreferrer">Enviar pedido por WhatsApp</a>
+      </div>
+    </aside>
+
+    <script src="../../catalog-data.js"></script>
+    <script src="../../category-page.js"></script>
+  </body>
+</html>

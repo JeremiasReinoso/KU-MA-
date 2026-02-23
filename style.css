@@ -12,7 +12,6 @@
   --logo-focus-y: 50%;
   --logo-nudge-x: 0px;
   --logo-nudge-y: 0px;
-  --logo-scale: 1.62;
 }
 
 * {
@@ -95,14 +94,13 @@ img {
 }
 
 .hero-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 76%;
+  height: 76%;
+  object-fit: contain;
   object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
-  transform: scale(var(--logo-scale));
   transform-origin: center;
-  translate: var(--logo-nudge-x) var(--logo-nudge-y);
+  translate: 0 0;
   mix-blend-mode: multiply;
 }
 
@@ -327,14 +325,13 @@ img {
 }
 
 .footer-logo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 76%;
+  height: 76%;
+  object-fit: contain;
   object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
-  transform: scale(var(--logo-scale));
   transform-origin: center;
-  translate: var(--logo-nudge-x) var(--logo-nudge-y);
+  translate: 0 0;
   mix-blend-mode: multiply;
 }
 
@@ -440,8 +437,8 @@ img {
   }
 
   .hero-logo {
-    width: 100%;
-    height: 100%;
+    width: 76%;
+    height: 76%;
   }
 
   .category-grid,

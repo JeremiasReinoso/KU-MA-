@@ -801,11 +801,12 @@ img {
 
 .social-float-stack {
   position: fixed;
-  right: 1rem;
-  bottom: 5.2rem;
-  display: grid;
+  right: 5.2rem;
+  bottom: 1rem;
+  display: flex;
   gap: 0.6rem;
   z-index: 20;
+  align-items: center;
 }
 
 .social-float {

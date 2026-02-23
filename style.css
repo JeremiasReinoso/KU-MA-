@@ -8,9 +8,9 @@
   --accent-soft: #2f7057;
   --shadow-soft: 0 18px 40px rgba(18, 26, 22, 0.08);
   --shadow-hover: 0 22px 48px rgba(19, 42, 33, 0.16);
-  --logo-focus-x: 43%;
+  --logo-focus-x: 41%;
   --logo-focus-y: 54%;
-  --logo-nudge-x: -14px;
+  --logo-nudge-x: -24px;
   --logo-nudge-y: 2px;
 }
 

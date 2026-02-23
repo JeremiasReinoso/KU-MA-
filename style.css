@@ -8,10 +8,6 @@
   --accent-soft: #2f7057;
   --shadow-soft: 0 18px 40px rgba(18, 26, 22, 0.08);
   --shadow-hover: 0 22px 48px rgba(19, 42, 33, 0.16);
-  --logo-focus-x: 50%;
-  --logo-focus-y: 50%;
-  --logo-nudge-x: 0px;
-  --logo-nudge-y: 0px;
 }
 
 * {
@@ -75,16 +71,26 @@ img {
   width: clamp(170px, 24vw, 230px);
   height: clamp(170px, 24vw, 230px);
   margin: 0 auto 1.5rem;
+  position: relative;
   border-radius: 50%;
-  background: #f8faf9;
-  border: 1px solid rgba(31, 77, 58, 0.24);
-  box-shadow: 0 16px 36px rgba(16, 28, 23, 0.14);
+  background: #ece9e4;
+  border: 4px solid #2a2f34;
+  box-shadow: 0 16px 36px rgba(16, 28, 23, 0.16);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   animation: logoFloatIn 900ms cubic-bezier(0.2, 0.7, 0.2, 1) 120ms both;
   transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.hero-logo-shell::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 50%;
+  border: 2px solid rgba(42, 47, 52, 0.85);
+  pointer-events: none;
 }
 
 .hero-logo-shell:hover,
@@ -94,14 +100,12 @@ img {
 }
 
 .hero-logo {
-  width: 76%;
-  height: 76%;
+  width: 86%;
+  height: 86%;
   object-fit: contain;
-  object-position: var(--logo-focus-x) var(--logo-focus-y);
-  border-radius: 50%;
-  transform-origin: center;
+  object-position: center;
   translate: 0 0;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .hero-tagline {
@@ -317,22 +321,33 @@ img {
 .footer-logo-shell {
   width: 72px;
   height: 72px;
+  position: relative;
   border-radius: 50%;
-  background: #f8faf9;
-  border: 1px solid rgba(31, 77, 58, 0.2);
-  box-shadow: 0 10px 24px rgba(17, 30, 24, 0.12);
+  background: #ece9e4;
+  border: 3px solid #2a2f34;
+  box-shadow: 0 10px 24px rgba(17, 30, 24, 0.14);
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-shell::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(42, 47, 52, 0.85);
+  pointer-events: none;
 }
 
 .footer-logo {
-  width: 76%;
-  height: 76%;
+  width: 86%;
+  height: 86%;
   object-fit: contain;
-  object-position: var(--logo-focus-x) var(--logo-focus-y);
-  border-radius: 50%;
-  transform-origin: center;
+  object-position: center;
   translate: 0 0;
-  mix-blend-mode: multiply;
+  mix-blend-mode: normal;
 }
 
 .footer-links {
@@ -437,8 +452,8 @@ img {
   }
 
   .hero-logo {
-    width: 76%;
-    height: 76%;
+    width: 86%;
+    height: 86%;
   }
 
   .category-grid,

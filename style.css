@@ -8,10 +8,11 @@
   --accent-soft: #2f7057;
   --shadow-soft: 0 18px 40px rgba(18, 26, 22, 0.08);
   --shadow-hover: 0 22px 48px rgba(19, 42, 33, 0.16);
-  --logo-focus-x: 41%;
-  --logo-focus-y: 54%;
-  --logo-nudge-x: -24px;
-  --logo-nudge-y: 2px;
+  --logo-focus-x: 50%;
+  --logo-focus-y: 50%;
+  --logo-nudge-x: 0px;
+  --logo-nudge-y: 0px;
+  --logo-scale: 1.62;
 }
 
 * {
@@ -99,7 +100,7 @@ img {
   object-fit: cover;
   object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
-  transform: scale(2.25);
+  transform: scale(var(--logo-scale));
   transform-origin: center;
   translate: var(--logo-nudge-x) var(--logo-nudge-y);
   mix-blend-mode: multiply;
@@ -331,7 +332,7 @@ img {
   object-fit: cover;
   object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
-  transform: scale(2.25);
+  transform: scale(var(--logo-scale));
   transform-origin: center;
   translate: var(--logo-nudge-x) var(--logo-nudge-y);
   mix-blend-mode: multiply;

@@ -59,16 +59,8 @@ function renderCatalog(products) {
           <h3 class="product-name">${product.name}</h3>
           <div class="product-meta">
             <p class="product-price">${formatPrice(product.price)}</p>
-            <button class="add-cart-btn" type="button" data-add-id="${product.id}">Agregar</button>
+            <button class="add-cart-btn" type="button" data-add-id="${product.id}">Agregar al carro</button>
           </div>
-          <a
-            class="button whatsapp-btn"
-            href="https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Hola KUMA, quiero consultar por ${product.name}.`)}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Consultar por WhatsApp
-          </a>
         </div>
       </article>
     `

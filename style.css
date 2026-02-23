@@ -90,9 +90,9 @@ img {
 }
 
 .hero-logo {
-  width: 78%;
-  height: 78%;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -306,9 +306,21 @@ img {
   max-width: 600px;
 }
 
-.footer-logo {
+.footer-logo-shell {
   width: 72px;
-  border-radius: 14px;
+  height: 72px;
+  border-radius: 50%;
+  background: #f8faf9;
+  border: 1px solid rgba(31, 77, 58, 0.2);
+  box-shadow: 0 10px 24px rgba(17, 30, 24, 0.12);
+  overflow: hidden;
+}
+
+.footer-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .footer-links {
@@ -413,8 +425,8 @@ img {
   }
 
   .hero-logo {
-    width: 78%;
-    height: 78%;
+    width: 100%;
+    height: 100%;
   }
 
   .category-grid,

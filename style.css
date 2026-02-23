@@ -799,6 +799,45 @@ img {
   fill: #ffffff;
 }
 
+.social-float-stack {
+  position: fixed;
+  right: 1rem;
+  bottom: 5.2rem;
+  display: grid;
+  gap: 0.6rem;
+  z-index: 20;
+}
+
+.social-float {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 16px 30px rgba(12, 24, 19, 0.28);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.social-float svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: #ffffff;
+}
+
+.social-float-instagram {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.social-float-facebook {
+  background: #1877f2;
+}
+
+.social-float:hover,
+.social-float:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 34px rgba(12, 24, 19, 0.35);
+}
+
 .section-reveal {
   opacity: 0;
   transform: translateY(28px);

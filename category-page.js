@@ -226,7 +226,9 @@ function initCart(productsById) {
 }
 
 (function initCategoryPage() {
-  const pageCategory = document.body.dataset.category;
+  const pathParts = window.location.pathname.split("/").filter(Boolean);
+  const slugFromPath = pathParts.length >= 2 && pathParts[0] === "categoria" ? pathParts[1] : "";
+  const pageCategory = slugFromPath || document.body.dataset.category;
   const allProducts = window.KUMA_PRODUCTS || [];
   const filtered = allProducts.filter((product) => product.category === pageCategory);
   const byId = new Map(allProducts.map((product) => [product.id, product]));

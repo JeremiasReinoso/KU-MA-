@@ -4,28 +4,28 @@
 const products = [
   {
     id: 1,
-    name: "KUMA Ridge Runner",
+    name: "Zapatillas",
     price: "$149.900",
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 2,
-    name: "KUMA Trail Pulse",
+    name: "Ropa",
     price: "$132.500",
     image:
       "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 3,
-    name: "Rompeviento Summit",
+    name: "Nuevos ingresos",
     price: "$94.000",
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
   },
   {
     id: 4,
-    name: "Buzo Alpine Core",
+    name: "Ofertas",
     price: "$86.900",
     image:
       "https://images.unsplash.com/photo-1610652492500-ded49ceeb378?auto=format&fit=crop&w=800&q=80",

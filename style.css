@@ -9,7 +9,7 @@
   --shadow-soft: 0 18px 40px rgba(18, 26, 22, 0.08);
   --shadow-hover: 0 22px 48px rgba(19, 42, 33, 0.16);
   --logo-focus-x: 50%;
-  --logo-focus-y: 53%;
+  --logo-focus-y: 57%;
 }
 
 * {
@@ -99,7 +99,7 @@ img {
   border-radius: 50%;
   transform: scale(2.25);
   transform-origin: center;
-  translate: 0 1px;
+  translate: 0 6px;
   mix-blend-mode: multiply;
 }
 
@@ -331,7 +331,7 @@ img {
   border-radius: 50%;
   transform: scale(2.25);
   transform-origin: center;
-  translate: 0 1px;
+  translate: 0 6px;
   mix-blend-mode: multiply;
 }
 

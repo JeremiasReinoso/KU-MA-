@@ -8,6 +8,8 @@
   --accent-soft: #2f7057;
   --shadow-soft: 0 18px 40px rgba(18, 26, 22, 0.08);
   --shadow-hover: 0 22px 48px rgba(19, 42, 33, 0.16);
+  --logo-focus-x: 50%;
+  --logo-focus-y: 53%;
 }
 
 * {
@@ -93,10 +95,11 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
   transform: scale(2.25);
   transform-origin: center;
+  translate: 0 1px;
   mix-blend-mode: multiply;
 }
 
@@ -324,10 +327,11 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: var(--logo-focus-x) var(--logo-focus-y);
   border-radius: 50%;
   transform: scale(2.25);
   transform-origin: center;
+  translate: 0 1px;
   mix-blend-mode: multiply;
 }
 
